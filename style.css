@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+canvas {
+    border: 0.5px solid rgb(49, 48, 48);
+}
+
+#btnCal {
+    margin-right: 2px;
+    font-style: oblique;
+    background-color: green;
+}
+
+#btnReset {
+    margin-left: 2px;
+    font-style: oblique;
+    background-color: red;
+}
