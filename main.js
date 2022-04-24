@@ -46,6 +46,17 @@ function onWidowLoad() {
 
     btnCalculat.onclick = drawCalculateRectangle;
     btnReset.onclick = clearData;
+    const widthData = document.querySelector('#width');
+    const heightData = document.querySelector('#height');
+    const positionxData = document.querySelector('#positionx');
+    const positionyData = document.querySelector('#positiony');
+    widthData.value = localStorage.getItem('width');
+    heightData.value = localStorage.getItem('heught');
+    positionxData.value = localStorage.getItem('positionX');
+    positionyData.value = localStorage.getItem('positionY');
+    if (widthData.value > 0 || heightData.value > 0 || positionxData.value > 0 || positionyData.value > 0) {
+        drawCalculateRectangle()
+    }
 }
 window.onload = onWidowLoad;
 
